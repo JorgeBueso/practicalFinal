@@ -1,0 +1,27 @@
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="personajesLiterarios">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="personaje" maxOccurs="unbounded" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element type="xsd:string" name="creador"/>
+              <xsd:element type="xsd:string" name="adaptaciones_pelicula" minOccurs="0"/>
+              <xsd:element type="xsd:string" name="adaptaciones_serie" minOccurs="0"/>
+              <xsd:element type="xsd:string" name="adaptacion_pelicula" minOccurs="0"/>
+              <xsd:element type="xsd:string" name="adaptacion_serie" minOccurs="0"/>
+              <xsd:element type="xsd:string" name="estetica"/>
+              <xsd:element type="xsd:string" name="epoca_en_la_que_transcurre"/>
+              <xsd:element name="ultima_aparicion"/>
+              <xsd:element type="xsd:string" name="actor"/>
+             
+            </xsd:sequence>
+            <xsd:attribute type="xsd:string" name="nombre" use="optional"/>
+            <xsd:attribute type="xsd:string" name="libro_origen" use="optional"/>
+            <xsd:attribute type="xsd:string" name="fecha_primera_aparicion" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
